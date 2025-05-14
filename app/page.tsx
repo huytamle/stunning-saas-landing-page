@@ -1,5 +1,13 @@
-const page = () => {
-  return <div>page</div>;
+import Header from "@/sections/Header";
+import Hero from "@/sections/Hero";
+
+const Home = () => {
+  return (
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
 };
 
-export default page;
+export default Home;
