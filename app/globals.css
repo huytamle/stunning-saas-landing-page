@@ -3,3 +3,17 @@
 @theme {
     --color-dark: #222;
 }
+
+@layer utilities {
+    .logo-ticker-image {
+        @apply h-8 w-auto
+    }
+
+    .tag {
+        @apply text-sm inline-flex border border-dark/10 px-3 py-1 rounded-lg tracking-tight
+    }
+
+    .primary-container {
+        @apply max-w-[1440px] mx-auto
+    }
+}
