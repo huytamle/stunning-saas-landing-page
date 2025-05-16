@@ -10,7 +10,7 @@ const apexLogo = "/assets/logo-apex.png";
 const LogoTicker = () => {
   return (
     <div className="py-8 bt-white">
-      <div className="container">
+      <div className="primary-container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)] ">
           <div className="flex gap-14 flex-none">
             <Image

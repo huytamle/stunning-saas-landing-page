@@ -10,11 +10,15 @@
     }
 
     .btn {
-        @apply px-4 py-2 rounded-lg font-medium inline-flex
+        @apply px-4 py-2 rounded-lg font-medium inline-flex cursor-pointer transition-transform transform hover:scale-110 duration-300 ease-in-out
+    }
+
+    .btn-text {
+        @apply px-4 py-2 rounded-lg font-medium inline-flex cursor-pointer transition-transform transform hover:scale-110 duration-300 ease-in-out text-black border-dark border
     }
 
     .btn-primary {
-        @apply bg-black text-white
+        @apply bg-black text-white hover:text-neutral-300 hover:bg-neutral-900
     }
 
     .tag {
@@ -40,4 +44,8 @@
     .card {
         @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }

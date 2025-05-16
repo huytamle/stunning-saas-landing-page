@@ -3,9 +3,10 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip">
-      <div className="primary-container max-sm:px-4">
-        <div className="md:flex items-center">
-          <div className="md:w-[478px]">
+      <div className="primary-container">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          {/* Left Side */}
+          <div className="md:w-[478px] pl-12">
             <div className="text-sm inline-flex border border-dark/10 px-3 py-1 rounded-lg tracking-tight">
               Version 2.0 is here
             </div>
@@ -17,11 +18,9 @@ const Hero = () => {
               your progress, motivate your efforts, and celebrate your
               successes.
             </p>
-            <div className="flex items-center mt-[30px] gap-2">
-              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight cursor-pointer">
-                Get for free
-              </button>
-              <button className=" text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight cursor-pointer gap-1 border border-dark">
+            <div className="flex items-center mt-[30px] gap-4">
+              <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-text">
                 <span>Learn more</span>
                 <Image
                   src="/assets/arrow-right.svg"
@@ -32,13 +31,15 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="mt-20 mx-auto md:mt-0 md:h-[648px] md:flex-1 relative">
+
+          {/* Right Side */}
+          <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative z-50">
             <Image
               src="/assets/cog.png"
               alt="cog image"
-              width={650}
-              height={500}
-              className="md:absolute md:h-full md:max-w-none md:-left-6 lg:left-0"
+              width={720}
+              height={680}
+              className="md:absolute md:translate-x-10 md:h-full md:max-w-none md:-left-6 lg:left-0"
             />
             <Image
               src="/assets/cylinder.png"
@@ -50,7 +51,7 @@ const Hero = () => {
             <Image
               src="/assets/noodle.png"
               alt="noodle image"
-              className="absolute top-[524px] left-[448px] hidden lg:block rotate-[30deg]"
+              className="absolute top-[524px] left-[720px] hidden lg:block rotate-[30deg]"
               width={220}
               height={200}
             />

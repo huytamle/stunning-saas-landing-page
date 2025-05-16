@@ -21,26 +21,28 @@ const ProductShowcase = () => {
           </p>
         </div>
         <div className="relative">
-          <Image
-            src={productImage}
-            alt="Product Image"
-            width={800}
-            height={1100}
-            className="mt-10"
-          />
+          <div className="mt-10 flex justify-center items-center">
+            <Image
+              src={productImage}
+              alt="Product Image"
+              width={1200}
+              height={1200}
+            />
+          </div>
+
           <Image
             src={pyramidImage}
             alt="Pyramid Image"
             width={262}
             height={262}
-            className="max-sm:hidden md:absolute -right-36 -top-32"
+            className="max-sm:hidden md:absolute -right-24 -top-32 z-50"
           />
           <Image
             src={tubeImage}
             alt="Tube Image"
             width={248}
             height={248}
-            className="max-sm:hidden md:absolute bottom-24 -left-36"
+            className="max-sm:hidden md:absolute bottom-24 -left-24 z-50"
           />
         </div>
       </div>
